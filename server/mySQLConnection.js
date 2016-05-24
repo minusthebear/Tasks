@@ -23,7 +23,6 @@ function handleDisconnect() {
     mySQLConnection = mysql.createConnection(db_config); // Recreate the mySQLConnection, since
     // the old one cannot be reused.
 
-    // DJH 3/19/2015 - not sure how risky this is, but did this to support
     // https://github.com/felixge/node-mysql
     // connection.query("UPDATE posts SET title = :title", { title: "Hello MySQL" });
 
