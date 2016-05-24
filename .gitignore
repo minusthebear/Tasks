@@ -1,8 +1,2 @@
-# Compiler outputs #
-
-
-# Directories #
-node_modules/
-bower_components/
-
-# Packages #
+node_modules
+bower_components
