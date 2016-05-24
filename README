@@ -1,0 +1,1 @@
+This application is in progress. It utilizes an AngularJS front-end framework, Node.JS back-end runtime environment, and MYSQL and Mongo databases.

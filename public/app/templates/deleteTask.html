@@ -1,0 +1,13 @@
+<div ng-show="del.firstOne()">
+	{{del.message}}
+</div>
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+		<div class="hoverDiv" ng-repeat="d in del.allTasks">
+			<div class="centerLeftDiv">
+				<span class="delTaskName"><h4 class="delete_task">{{d.name}}</h4></span>
+				<a href="" ng-click="del.deleteIndTask(d.name);$event.preventDefault()"><span class="close_x"></span></a>
+			</div>
+		</div>
+	</div>
+</div>

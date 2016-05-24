@@ -1,0 +1,22 @@
+<div class="main col-md-6 col-md-offset-3">
+    <div class="alert alert-danger" id="errors"></div>
+    <div id="login-screen">
+      <p class="lead">Hello Doctor! Welcome to your special login page</p>
+      <p>Please enter your name below and click 'Join' or hit the 'Enter' key.</p>
+
+       <form class="form-inline" id="doctorForm" ng-controller="LoginFormController">
+          <div class="form-group">
+            <h3>Login</h3>
+            <input type="text" class="form-control input-lg" placeholder="Enter Username" id="username" ng-model="user.name">
+            <input type="text" class="form-control input-lg" placeholder="Enter Password" id="userpassword" ng-model="user.password">
+            <input type="submit" name="Login" id="loginSubmit" value="Login" class="btn btn-primary btn-lg" ng-click="signin(user)">
+            <p>{{user.name}} - {{user.password}}</p>
+<!-- 
+            <input type="button" name="Google" id="loginSubmit" value="Login" class="btn btn-default btn-lg" ng-click="google()">
+ -->
+            <input type="button" name="Google" id="loginSubmit" value="Login with Google" class="btn btn-default btn-lg" ng-click="authenticate('google')">
+            <input type="button" name="Facebook" id="loginSubmit" value="Login with Facebook" class="btn btn-default btn-lg" ng-click="authenticate('facebook')">
+          </div>
+        </form>
+      </div>
+    </div>

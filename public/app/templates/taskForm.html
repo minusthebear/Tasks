@@ -1,0 +1,20 @@
+<!-- <style>
+	.modal {
+		display: block;
+	}
+</style> -->
+<div ng-show="tf.firstOne()">
+	{{tf.message}}
+</div>
+
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+		<form novalidate>
+		    <h1>Custom form</h1>
+		    <formly-form model="tf.custom" fields="tf.customFields" form="tf.customForm">
+		        <button type="submit" class="btn btn-primary" ng-click="tf.submit(tf.custom)" ng-disabled="tf.customForm.$invalid">Submit</button>
+		    </formly-form>
+			<button type="button" ng-click="tf.addField()" >Add Extra Field</button>
+		</form>
+	</div>
+</div>

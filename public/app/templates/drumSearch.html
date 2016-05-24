@@ -1,0 +1,16 @@
+<h3>Welcome to the Drums Page</h3>
+<search-song>
+
+</search-song>
+
+<div ng-repeat="drum in drumSearch.allDrums" class="panel panel-primary">
+  <div class="panel-heading" ng-click="collapse(drum.artist)">{{drum.artist}}</div>
+  <div class="panel-body" ng-hide="collapsed">
+
+		<ul>
+		  <li ng-repeat="song in drum.songs">{{song}}</li>
+		</ul>
+
+  </div>
+</div>
+

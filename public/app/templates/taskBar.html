@@ -1,0 +1,10 @@
+<div ng-controller="mainController as main">
+{{main.message}}
+<div ng-show="main.firstOne()">
+	<a ui-sref="taskform">Create first task</a>
+</div>
+    <ul>
+        <li style="list-style:none;" ng-repeat="t in main.allTasks"><a href="" ng-click="main.test(t.url);$event.preventDefault()">{{t.name}}</a>
+        </li>
+    </ul>
+</div>

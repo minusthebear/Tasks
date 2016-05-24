@@ -1,0 +1,69 @@
+.hoverDiv {
+	overflow: auto;
+	overflow-y:hidden
+	height: 35px;
+	/* Firefox */
+	width: -moz-calc(100% - 18px);
+	/* WebKit */
+	width: -webkit-calc(100% - 18px);
+	/* Opera */
+	width: -o-calc(100% - 18px);
+	/* Standard */
+	width: calc(100% - 18px);	
+	background: #7FFFD4;
+	-webkit-box-shadow: 2px 2px 2px 0px rgba(148,148,148,1);
+	-moz-box-shadow: 2px 2px 2px 0px rgba(148,148,148,1);
+	box-shadow: 2px 2px 2px 0px rgba(148,148,148,1);
+	margin-bottom:10px;
+}
+.hoverDiv:hover {
+	background: #f5f5f5;
+}
+.close_x {
+	display:inline-block;
+	height:25px;
+	width:25px;
+	vertical-align: middle;
+	margin-top: 7px;
+	margin-right: 15px;
+	float: right;
+    background-image: url("../images/basics-22-128.png");
+    background-repeat: no-repeat;
+    background-size: contain; 
+}
+.close_x:hover {
+	background: #aaaaaa;
+    background-image: url("../images/basics-22-128.png");
+    background-repeat: no-repeat;
+    background-size: contain; 
+}
+
+.delTaskName {
+	height:100%;
+	display:inline-block;
+	vertical-align:middle;
+	line-height:35px;
+}
+
+.delete_task {
+	vertical-align:middle;
+	color: #5F9EA0;
+}
+.title-page {
+	height: 18%;
+	width: 18%;
+}
+.minus-top-row {
+	margin-top: -30px;
+}
+
+.taskLink {
+	color: #ffffff;
+	text-align: center;
+}
+.taskLink:hover {
+	color: #ccccee;
+}
+.inside_white_container {
+	color: #009C9C;
+}

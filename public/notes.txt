@@ -1,0 +1,22 @@
+INSERT INTO computers(topic, type, date_started)
+	VALUES ('JavaScript', 'Object-oriented interpreted language', 'October 2013');
+INSERT INTO computers(topic, type, date_started)
+	VALUES ('JQuery', 'JavaScript library', 'January 2014');
+INSERT INTO computers(topic, type, date_started)
+	VALUES ('Node.JS', 'Server-side, event-driven networking language', 'June 2014');	
+INSERT INTO computers(topic, type, date_started, comments)
+	VALUES ('Angular.JS', 'JavaScript library', 'October 2014', 
+	'Currently studying this now. I have developed comfortability with Node.JS and want to be more familiar with a front-end language.');	
+INSERT INTO computers(topic, type, date_started, comments)
+	VALUES ('Redis', 'Key-value non-relational database', 'December 2014',
+	'Highly useful. Currently on hiatus to develop familiarity with a RDBMS framework.');	
+INSERT INTO computers(topic, type, date_started, comments)
+	VALUES ('MySQL', 'Relational database management system', 'March 2014',
+	'Currently studying this. Eventually I want to return to Redis, but I want to develop familiarity with a RDBMS framework.');	
+
+INSERT INTO books(author, title, category, year)
+	VALUES ('Rushdie, Salman', 'The Satanic Verses', 'Fiction', '1988');	
+INSERT INTO books(author, title, category, year)
+	VALUES ('Nixon, Robin', 'Learning PHP, MySQL, JavaScript, CSS and HTML5', 'Programming', '2014');	
+INSERT INTO books(author, title, category, year)
+	VALUES ('Hosking, Geoffrey', 'Russian History: A Very Short Introduction', 'Non-Fiction', '2012');	

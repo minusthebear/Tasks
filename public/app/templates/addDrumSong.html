@@ -1,0 +1,27 @@
+<h3>Add New Song Learned</h3>
+
+<form class="form-horizontal" role="form">
+    <div class="form-group">
+        <label for="drumArtist" class="col-sm-1 control-label">Artist</label>
+        <div class="col-sm-4">
+            <input ng-model="drumAdder.newDrum.artist" type="text" class="form-control" id="drumArtist" placeholder="Artist">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="drumSong" class="col-sm-1 control-label">Song</label>
+        <div class="col-sm-4">
+            <input ng-model="drumAdder.newDrum.song" type="text" class="form-control" id="drumSong" placeholder="Song">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="drumRating" class="col-sm-1 control-label">Rating</label>
+        <div class="col-sm-4">
+            <input ng-model="drumAdder.newDrum.rating" type="text" class="form-control" id="drumRating" placeholder="Rating">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-1 col-sm-5">
+            <button ng-click="drumAdder.addBrandNewDrum(newDrum)" class="btn btn-default">Save</button>
+        </div>
+    </div>
+</form>

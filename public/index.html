@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link href="css/startbootstrap-freelancer-1.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/startbootstrap-freelancer-1.0.3/css/freelancer.css" rel="stylesheet">
+    <link href="css/custom_css.css" rel="stylesheet">
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  
+    <style>
+	.rating {
+	  margin: 0;
+	  padding: 0;
+	  display: inline-block;
+	  
+	  li {
+		padding: 1px;
+		color: #ddd;
+		font-size: 20px;
+		text-shadow: .05em .05em #aaa;
+		list-style-type: none;
+		display: inline-block;
+		cursor: pointer;
+		&.filled {
+		  color: #fd0; //#21568b
+		}
+	  }
+	  &.readonly li.filled {
+		color: #666;
+	  }
+	}
+    </style>
+</head>
+<body ng-app="app">
+
+
+<div ng-include src="'app/templates/header.html'"></div>
+
+<header>
+    <div class="row minus-top-row">
+    	<div class="container">
+            <div class="col-lg-12">
+				<div ui-view></div>
+		    </div>
+        </div>		
+    </div>
+</div>		
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/ui-bootstrap-tpls.min.js"></script>
+<!--
+<script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js"></script>
+-->
+<script src="bower_components/api-check/dist/api-check.js"></script>
+<script src="bower_components/angular-formly/dist/formly.js"></script>
+<script src="bower_components/angular-formly-templates-bootstrap/dist/angular-formly-templates-bootstrap.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/satellizer/satellizer.js"></script>
+<script src="app/app.js"></script>
+<script src="app/controllers/header.js"></script>
+<script src="app/controllers/mainController.js"></script>
+<script src="app/controllers/tableController.js"></script>
+<script src="app/controllers/LoginFormController.js"></script>
+<script src="app/controllers/loginController.js"></script>
+<script src="app/controllers/registerController.js"></script>
+<script src="app/controllers/formController.js"></script>
+<script src="app/controllers/indFormController.js"></script>
+<script src="app/controllers/editFormController.js"></script>
+<script src="app/controllers/deleteController.js"></script>
+<script src="app/services/dataService.js"></script>
+<script src="app/services/taskService.js"></script>
+<script src="app/services/IDService.js"></script>
+<script src="app/services/authtoken.js"></script>
+<script src="app/services/authinterceptor.js"></script>
+<script src="app/services/localStorage.js"></script>
+</body>
+</html>

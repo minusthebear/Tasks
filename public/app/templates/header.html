@@ -1,0 +1,29 @@
+<div class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div ng-controller="HeaderCtrl">
+			<ul class="nav navbar-nav navbar-right">
+				<li ui-sref-active="active">
+					<a ui-sref="main">Main</a>
+				</li>
+				<li ng-show="isAuthenticated()" uib-dropdown>
+				   <a uib-dropdown-toggle >Menu 1<span class="caret"></span></a>
+				    <ul class="uib-dropdown-menu">
+				      <li role="menuitem"><a ui-sref="view">View Tasks</a></li>
+				      <li role="menuitem"><a ui-sref="taskform">Add New Task</a></li>
+				      <li role="menuitem"><a ui-sref="delete">Delete Task</a></li> 
+				    </ul>
+				</li>				
+				<li ng-hide="isAuthenticated()">
+					<a ui-sref="login">Login</a>
+				</li>
+				<li ng-hide="isAuthenticated()">
+					<a ui-sref="register">Register</a>
+				</li>
+				<li ng-show="isAuthenticated()">
+					<a ui-sref="logout" ng-click="logout()">Logout</a>
+				</li>
+			</ul>
+			<h3 class="text-muted">Tasks, Hobbies and Chores</h3>
+		</div>
+	</div>
+</div>

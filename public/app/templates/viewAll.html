@@ -1,0 +1,13 @@
+<img class="img-responsive title-page" src="../images/folders-24867_1280.png" alt="">
+
+<h2 class="tagline">All your tasks</h2>
+    <div class="row">
+    	<div class="col-md-6 col-md-offset-3">
+		    <ul style="list-style:none; padding-left:0;">
+		        <li ng-repeat="t in main.allTasks"><a href ng-click="main.test(t);$event.preventDefault()" class="taskLink">{{t.name}}</a></li>
+		    </ul>
+		</div>
+	</div>
+</div>
+
+

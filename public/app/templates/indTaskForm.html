@@ -1,0 +1,30 @@
+<!-- <style>
+	.modal {
+		display: block;
+	}
+</style> -->
+
+<div ng-if="redirected">
+	Please fill out your first value for your new task.
+</div>
+<p>{{tf.message}}</p>
+
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+		<form novalidate>
+		    <h1>Custom form</h1>
+		    <formly-form model="tf.custom" fields="tf.customFields" form="tf.customForm">
+		        <button type="submit" class="btn btn-primary"  ng-click="tf.submit(tf.custom)" ng-disabled="tf.customForm.$invalid">Submit</button>
+		    </formly-form>
+		</form>
+	</div>
+</div>
+ <!--   <script type="text/ng-template" id="bigFatTest.html">
+		 <div class="modal">
+			 Testing
+			 <div class="modal-header">
+				<h1>Big fat test</h1>
+			</div>
+		</div>
+    </script> -->
+

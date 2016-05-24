@@ -1,0 +1,19 @@
+<button ng-click="task.add()" class="btn btn-default">Add new task</button>
+
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+		<div ng-repeat="t in task.allColumns" class="panel panel-primary">
+		   <div ng-attr-id="{{ 'object-' + t.id }}" class="panel-heading" ng-click="collapse(t.array)" ng-repeat="(key, value) in t.n1 | limitTo:1" data="{{t.array}}"><h4>{{key}}: {{value}}</h4></div>
+		  <div class="panel-body" ng-hide="collapsed">
+		  	<span class="span3">
+		    <each-task-column>
+				<div ng-repeat="(key, value) in indTask">
+				  <div class="inside_white_container" ng-attr-id="{{ t.id + key }}"><h5><strong>{{key}}:</strong> {{value}}</h5></div>
+				</div>
+				<a href="" ng-click="task.edit(t.id);$event.preventDefault()">Edit this value</a>
+			</each-task-column>
+			</span>
+		  </div>
+		</div>
+	</div>
+</div>

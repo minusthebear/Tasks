@@ -1,0 +1,27 @@
+<!-- <style>
+	.modal {
+		display: block;
+	}
+</style> -->
+
+<div ng-if="redirected">
+	This was redirected.
+</div>
+<p>This is working</p>
+
+<form novalidate>
+    <h1>Custom form</h1>
+    <formly-form model="tf.custom" fields="tf.customFields" form="tf.customForm">
+        <button type="submit" class="btn btn-primary" ng-click="tf.submit(tf.custom)" ng-disabled="tf.customForm.$invalid">Submit</button>
+    </formly-form>
+</form>
+
+ <!--   <script type="text/ng-template" id="bigFatTest.html">
+		 <div class="modal">
+			 Testing
+			 <div class="modal-header">
+				<h1>Big fat test</h1>
+			</div>
+		</div>
+    </script> -->
+
