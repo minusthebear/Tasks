@@ -14,14 +14,12 @@ var knex = require('knex')({
 });
 
 exports.createUserTable = function(x){
-	console.log(x);
 	return knex.schema.hasTable(x.id).then(function(exists) {
 		if (!exists) {
 			return knex.schema.createTable(x.id, function(t){
 				t.increments();
 				for (var y in x.val){
 					t.string(x.val[y], 255);
-					// console.log(x.val[y]);
 				}
 				t.timestamps();
 			});
@@ -76,13 +74,9 @@ exports.deleteRow = function(id, table){
 };
 
 exports.getTaskColumns = function(t){
-	
-	console.log("This is T");
-	console.log(t);
 	var col = [];
 	return knex(t).columnInfo().then(function(info) {
 		for (var x in info){
-			console.log(x);
 			col.push(x);
 		}
 		return col;
@@ -90,13 +84,10 @@ exports.getTaskColumns = function(t){
 };
 
 exports.getUserTable = function(t){
-	console.log("THIS IS T: " + t);
 	return knex.select().table(t);
 };
 
 exports.getAllUserTables = function(t){
-	console.log("2");
-	console.log(t);
 	// Keep this function for reference.
 	// This function works, but takes too much time.
 	// var dfd = Q.defer();
